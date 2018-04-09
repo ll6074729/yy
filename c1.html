@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- layui s -->
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="layui/layui.all.js"></script>
+    <!-- layui e -->
+    <title>精医健康</title>
+</head>
+<style>
+    .hr1 {
+        background: #f0f0f0;
+        height: .5rem;
+        margin: 0;
+    }
+
+    html,
+    body {
+        font: 12px;
+        background: #f0f0f0;
+    }
+
+    header {
+        padding: 1rem;
+        color: #fff;
+        background: #0089bb;
+        font-size: 1rem;
+    }
+
+    /* 支付方式的头部 s */
+
+    .head {
+        background: #f0f0f0;
+    }
+
+    .head .head-nav {
+        font-size: .85rem;
+        position: relative;
+        padding: .85rem;
+    }
+
+    .head .head-nav::before {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        content: " ";
+        width: 2px;
+        background: #0089bb;
+        height: 40%;
+
+    }
+
+    .head .head-title {
+        font-size: .85rem;
+        text-align: center;
+        background: #fff;
+        padding: 1rem 2rem;
+    }
+
+    /* 支付方式的头部 e */
+
+    /* 选择支付金额 s */
+
+    .pay-box {
+        text-align: center;
+        background: #fff;
+    }
+
+    .pay-list {
+        padding: 1rem 2rem;
+    }
+
+    .pay-list li {
+        padding: .6rem;
+    }
+
+    .pay-list li.active {
+        color: #0089bb
+    }
+
+    /* 选择支付金额 e */
+
+    .btn {
+        background: #0089bb;
+        color: #fff;
+        font-size: 1rem;
+        padding: .6rem 4rem;
+        border-radius: 8px;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+</style>
+
+<body>
+    <!-- 头部 s -->
+    <header class="layui-row">
+        <div class="layui-col-xs2">
+            <a href="javascript:history.go(-1)">
+                <img src="images/c1_03.png" alt="" srcset="" style="width:1rem">
+            </a>
+        </div>
+        <div class="layui-col-xs10">
+            开通慢病助手
+        </div>
+    </header>
+    <!-- 头部 e -->
+    <section>
+        <div class="pay-one">
+            <div class="head">
+                <div class="head-nav">
+                    途径一 充值免费送
+                </div>
+                <div class="head-title layui-row">
+                    <div class="layui-col-xs6">
+                        金额
+                    </div>
+                    <div class="layui-col-xs6">
+                        时间
+                    </div>
+                </div>
+            </div>
+            <hr class="hr1">
+            <div class="pay-box">
+                <ul class="pay-list">
+                    <li class="layui-row">
+                        <div class="layui-col-xs6">
+                            400
+                        </div>
+                        <div class="layui-col-xs6">
+                            1
+                        </div>
+                    </li>
+                    <li class="layui-row active">
+                        <div class="layui-col-xs6">
+                            800
+                        </div>
+                        <div class="layui-col-xs6">
+                            2
+                        </div>
+                    </li>
+                    <li class="layui-row">
+                        <div class="layui-col-xs6">
+                            1200
+                        </div>
+                        <div class="layui-col-xs6">
+                            3
+                        </div>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="btn">
+                    确定
+                </a>
+            </div>
+        </div>
+        <div class="pay-two">
+            <div class="head">
+                <div class="head-nav">
+                    途径二 支付开通
+                </div>
+                <div class="head-title layui-row">
+                    <div class="layui-col-xs6">
+                        金额
+                    </div>
+                    <div class="layui-col-xs6">
+                        时间
+                    </div>
+                </div>
+            </div>
+            <hr class="hr1">
+            <div class="pay-box">
+                <ul class="pay-list">
+                    <li class="layui-row">
+                        <div class="layui-col-xs6">
+                            20
+                        </div>
+                        <div class="layui-col-xs6">
+                            1
+                        </div>
+                    </li>
+                    <li class="layui-row active">
+                        <div class="layui-col-xs6">
+                            40
+                        </div>
+                        <div class="layui-col-xs6">
+                            2
+                        </div>
+                    </li>
+                    <li class="layui-row">
+                        <div class="layui-col-xs6">
+                            60
+                        </div>
+                        <div class="layui-col-xs6">
+                            3
+                        </div>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="btn">
+                    确定
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+</html>

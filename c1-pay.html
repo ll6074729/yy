@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- layui s -->
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="layui/layui.all.js"></script>
+    <!-- layui e -->
+    <title>精医健康</title>
+</head>
+<style>
+    .hr1 {
+        background: #f0f0f0;
+        height: .5rem;
+        margin: 0;
+    }
+
+    html,
+    body {
+        font: 12px;
+        background: #f0f0f0;
+    }
+
+    header {
+        padding: 1rem;
+        color: #fff;
+        background: #0089bb;
+        font-size: 1rem;
+    }
+
+    .pay-title {
+        padding: 1.5rem 1rem;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: center;
+        color: #0089bb;
+        font-size: 1.3rem;
+    }
+
+    .pay-money {
+        background: #fff;
+        padding: 1rem;
+    }
+
+    .price-list {
+        padding: 1rem 0;
+    }
+
+    .pay-price {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .cont-price{
+        padding-top: 1rem;
+    }
+    .price-list div:last-child{
+        text-align: right;
+        color: #999;
+    }
+    .cont-price div:last-child{
+        text-align: right;
+        color: #f76a24;
+    
+    }
+
+    /* 支付方式 */
+    .head .head-nav {
+        font-size: .85rem;
+        position: relative;
+        padding: .85rem;
+    }
+
+    .head .head-nav::before {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        content: " ";
+        width: 2px;
+        background: #0089bb;
+        height: 40%;
+
+    }
+
+    .weixin{
+        padding: 1rem;
+        background: #fff;
+    }
+
+    /* 支付按钮 */
+    nav{
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+    }
+    nav a{
+        display: inline-block;
+        margin-left: 5%;
+        padding: .8rem 0;
+        width: 90%;
+        color: #fff;
+        text-align: center;
+        background: #0089bb;
+        border-radius: 3px;
+    }
+</style>
+
+<body>
+    <!-- 头部 s -->
+    <header class="layui-row">
+        <div class="layui-col-xs2">
+            <a href="javascript:history.go(-1)">
+                <img src="images/c1_03.png" alt="" srcset="" style="width:1rem">
+            </a>
+        </div>
+        <div class="layui-col-xs10">
+            在线支付
+        </div>
+    </header>
+    <!-- 头部 e -->
+    <section class="pay-money">
+        <div class="pay-title">
+            开通慢病助手1年
+        </div>
+        <!-- 价钱 s -->
+        <div class="pay-price layui-row">
+            <div class="price-list">
+                <div class="layui-col-xs6">总价</div>
+                <div class="layui-col-xs6">￥240.00</div>
+            </div>
+            <div class="price-list">
+                <div class="layui-col-xs6">积分抵减</div>
+                <div class="layui-col-xs6">-￥240.00</div>
+            </div>
+            <div class="price-list">
+                <div class="layui-col-xs6">钱包余额</div>
+                <div class="layui-col-xs6">-￥240.00</div>
+            </div>
+
+        </div>
+        <div class="cont-price layui-row">
+            <div class="layui-col-xs6">实付总价</div>
+            <div class="layui-col-xs6">￥130.00</div>
+        </div>
+        <!-- 价钱 e -->
+    </section>
+    <section class="pay-status head">
+        <div class="head-nav">
+            支付方式
+        </div>
+        <div class="weixin">
+            微信支付
+        </div>
+    </section>
+    <nav>
+        <a href="">
+            立即支付
+        </a>
+    </nav>
+</body>
+
+
+</html>
